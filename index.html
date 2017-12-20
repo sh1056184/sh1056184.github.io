@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta name="title" content="Yotako | Seamless transition from design to code"/>
+  <meta name="description" content="Translate your design (PSD, Balsamiq, etc.) into tailor made source code with your favorite libraries and frameworks, no matter the kind of app you develop."/>
+  <title>Seamless transition from design to code | Yotako</title>
+  <!-- views/partials/head.ejs -->
+<meta charset="UTF-8">
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="web app, application, web development, app development, code, translate, translation, transition, conversion, convert, designer, developer, tool, software, angular, backbone, javascript, frontend, UI, design, balsamiq, scaffolding, react, react_native, PSD, photoshop, sketch">
+<link type="image/x-icon" href="favicon.ico" rel="icon" />
+<link rel='stylesheet' href='css/app.css' />
+<!-- Reduce page flickering -->
+<!-- <style>.async-hide { opacity: 0 !important} </style> -->
+<!-- <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date; -->
+<!-- h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')}; -->
+<!-- (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c; -->
+<!-- })(window,document.documentElement,'async-hide','dataLayer',4000, -->
+<!-- {'GTM-59V5GJW':true}); -->
+<!-- </script> -->
+
+
+
+<!-- Google tracking code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-84364213-2'></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-84364213-2', { 'optimize_id': 'GTM-59V5GJW'});
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e, t, n, s, u, a) {
+    e.twq || (s = e.twq = function() {
+            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '../static.ads-twitter.com/uwt.js',
+        a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+}(window, document, 'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init', 'nxig4');
+twq('track', 'PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+  <script>
+  gtag('require', 'GTM-59V5GJW');
+</script>
+
+
+</head>
+
+<body>
+  <div class="topbar-shim">
+    <!-- Facebook Pixel Code -->
+<script>
+! function(f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function() {
+        n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+}(window,
+    document, 'script', '../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1068158826648880'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript>
+    <img id="facebookImg" height="1" width="1" src="../www.facebook.com/tr3f52.gif?id=1068158826648880&amp;ev=PageView&amp;noscript=1" alt="facebookImg"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+    <nav class="web-topbar">
+        <!-- views/partials/website_header.ejs -->
+        <div class="topbar-wrapper">
+            <nav class="topbar-left-container col-xs-4 col-sm-8 ">
+                <ul>
+                    <li>
+                        <a class="menu-item logo-item" href="index.html"><img src="../tako.assets.yotako.io/images/brand/logo-yotako.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a class="hidden-xs menu-item" href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="hidden-xs menu-item" href="documentation.html">Documentation</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="topbar-right-container hidden-xs col-xs-8 col-sm-4 full-screen-menu-nav">
+                
+            </nav>
+            <div class="menu-mobile hidden-sm hidden-md hidden-lg">
+                <span id="burger-menu-hook" class="burger-menu-container">
+                    <img src="images/website/icons/icon-burger-menu.png" alt="">
+                </span>
+                <div class="wrapper-menu-container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a id="topbar-mobile-signup" class="menu-item-highlight" href="auth/signup.html">SIGN UP</a>
+                            </li>
+                            <li>
+                                <a id="topbar-mobile-login" class="menu-item" href="auth/login.html">Login</a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="documentation.html">Documentation</a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  <div class="wrapper">
+    <div class="main">
+      <section class="hero-shot-section">
+        <div class="photo-container">
+          <div class="filter-container ">
+            <div class="wrapper-container-lg hero-wrapper">
+              <div class="content-container">
+                <div class="title">
+                  <h1>Seamless transition from design to code</h1>
+                </div>
+                <div class="info-container">
+                  <p>
+                    Translate design into tailor-made code in a heartbeat.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="hidden-sm hidden-xs wrapper-container-lg section-hero-example">
+        <div class="item hero-screen">
+          <img src="images/website/photos/psd-screen.png" alt="Photoshop PSD UI">
+        </div>
+        <div class="item hero-phone">
+          <div class="hidden-sm hidden-xs hero-shot-img">
+            <div class="marvel-device-css iphone5s black">
+              <div class="top-bar"></div>
+              <div class="sleep"></div>
+              <div class="volume"></div>
+              <div class="camera"></div>
+              <div class="sensor"></div>
+              <div class="speaker"></div>
+              <div class="screen">
+                <iframe style="height:100%; width:100%; border-width: 0px;" src="https://tako.assets.yotako.io/gallery/yotako-airbnb/foryou.html"></iframe>
+              </div>
+              <div class="home"></div>
+              <div class="bottom-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-item graphic-steps-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="steps-list">
+                <div class="row">
+                  <div class="step-item-container col-md-offset-1 col-md-2 col-xs-12">
+                    <div class="step-title">
+                      <span class="circle-item">1</span>
+                      <p>Upload your design</p>
+                    </div>
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/website/icons/step1-graphic.png" alt="Step 1: Upload your designs into Yotako.">
+                    </div>
+                    <div class="hidden-lg hidden-md col-sm-offset-3 col-sm-6 c-content">Upload your designs into Yotako whatever the design tool you use.</div>
+                  </div>
+                  <div class="step-transition col-md-2 col-xs-12 hidden-sm hidden-xs">
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/website/icons/step1b-graphic.png" alt="->">
+                    </div>
+                  </div>
+                  <div class="step-item-container col-md-2 col-xs-12">
+                    <div class="step-title">
+                      <span class="circle-item">2</span>
+                      <p>Customize</p>
+                    </div>
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/website/icons/step2-graphic.png" alt="Step 2: Customize your stack.">
+                    </div>
+                    <div class="hidden-lg hidden-md col-sm-offset-3 col-sm-6 c-content">Customize your stack with the libraries and frameworks of your choice.</div>
+                  </div>
+                  <div class="step-transition col-md-2 col-xs-12 hidden-sm hidden-xs">
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/website/icons/step2b-graphic.png" alt="->">
+                    </div>
+                  </div>
+                  <div class="step-item-container col-md-2 col-xs-12">
+                    <div class="step-title">
+                      <span class="circle-item">3</span>
+                      <p>Get ready-to-use source code</p>
+                    </div>
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/website/icons/step3-graphic.png" alt="Step 3: Get ready-to-use source code.">
+                    </div>
+                    <div class="hidden-lg hidden-md col-sm-offset-3 col-sm-6 c-content">Your code is based on the design and follows community best practices.</div>
+                  </div>
+                </div>
+                <div class="row hidden-xs hidden-sm">
+                  <div class="col-md-offset-1 col-md-2 col-xs-12 step-info-content">
+                    <div class="c-content">Upload your design into Yotako whatever the design tool you use.</div>
+                  </div>
+                  <div class="col-md-offset-2 col-md-2 col-xs-12 step-info-content">
+                    <div class="c-content">Select the stack with the libraries and frameworks of your choice or create your own.</div>
+                  </div>
+                  <div class="col-md-offset-2 col-md-2 col-xs-12 step-info-content">
+                    <div class="c-content">Your code is based on the design and follows community best practices.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-item features-section">
+        <!-- FEATURE ITEM -->
+        <!-- FEATURE ITEM -->
+        <div class="item wrapper-container-lg">
+          <div class="content centered-content">
+            <img src="images/website/photos/psd-screen.png" alt="Photoshop PSD UI">
+            <a href="https://tako.assets.yotako.io/files/psd/UI-kit-airbnb.psd" class="primary-button" id="landing-download-psd-button">Download PSD file</a>
+          </div>
+          <div class="content">
+            <div class="title-section">
+              <span class="background-item">1</span>
+              <div class="title-content">
+                <h2>Upload your design</h2>
+                <span>Use your favorite design tool</span>
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                You and your team use specific tools to design wireframes, mockups and prototypes? We bet you have your preferences and you are damn right. So with Yotako keep on creating awesome designs the way you always did. Just upload the design (e.g. PSD or Balsamiq Mockups) to Yotako.
+              </p>
+              <a href="documentation.html">More info about the design tools Yotako currently supports.</a>
+              <img class="design-blocks" src="images/website/icons/design-blocks.png" alt="Adobe Photoshop, Balsamiq Mockups, Sketch, InVision, UXPin, Proto.io, Axure">
+            </div>
+          </div>
+        </div>
+        <!-- END FEATURE ITEM -->
+        <!-- END FEATURE ITEM -->
+        <!-- FEATURE ITEM -->
+        <!-- FEATURE ITEM -->
+        <div class="item wrapper-container-lg">
+          <div class="content centered-content">
+            <img src="images/website/photos/dashboard-steps.gif" alt="Yotako Dashboard">
+          </div>
+          <div class="content">
+            <div class="title-section">
+              <span class="background-item">2</span>
+              <div class="title-content">
+                <h2>Customize</h2>
+                <span>Because every project is unique</span>
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                No matter the kind of app you develop (web or mobile) and your favorite stack, Yotako follows your lead. Select a predefined stack or customize your own with the frameworks and libraries you use (Angular, React, Backbone, etc.), the testing tools you want (Mocha, Chai, etc.), your task runner (Grunt, Gulp or other?), the styles (Materialize, Bootstrap, Plain CSS, ...) and many more!
+              </p>
+              <!-- <a href="/resources/faq">More info about the stacks Yotako currently provides.</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- END FEATURE ITEM -->
+        <!-- END FEATURE ITEM -->
+        <!-- FEATURE ITEM -->
+        <!-- FEATURE ITEM -->
+        <div class="item wrapper-container-lg">
+          <div class="content centered-content">
+            <div class="hero-shot-img">
+              <div class="marvel-device-css iphone5s black">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="camera"></div>
+                <div class="sensor"></div>
+                <div class="speaker"></div>
+                <div class="screen">
+                  <iframe style="height:100%; width:100%; border-width:0px;" src="https://tako.assets.yotako.io/gallery/yotako-airbnb/index.html"></iframe>
+                </div>
+                <div class="home"></div>
+                <div class="bottom-bar"></div>
+              </div>
+            </div>
+            <a href="auth/signup.html" class="primary-button" id="landing-github-button">Github</a>
+          </div>
+          <div class="content">
+            <div class="title-section">
+              <span class="background-item">3</span>
+              <div class="title-content">
+                <h2>Ready-to-use source code</h2>
+                <span>Git clone your app!</span>
+              </div>
+            </div>
+            <div class="info">
+              <p>
+                Just select your repository (e.g. Github, Bitbucket, etc.). Yotako provides you with ready-to-use source code that respects your wishes and follows community's best practices and highest quality standards (e.g. W3C).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-item ">
+          <div class="centered-content wrapper-container-sm">
+            <img class="bottom-octopus" src="images/brand/big-octo.png" alt="Yotako logo">
+            <h2>USE YOTAKO FOR FREE</h2>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="web-footer">
+  <div class="wrapper-container-lg footer-content-container">
+    <div class="menu-section">
+      <ul class="footer-item">
+        <li><span><a href="index.html">Yotako</a></span></li>
+        
+          <br>
+          <div>
+            <form action="#" onsubmit="event.preventDefault();" id="newsletter-footer-form">
+              <div id="newsletter-footer-container">
+                <input required id="newsletter-footer-input" class="text-input" type="email" name="newsletter-input" placeholder="Email address">
+                <button id="newsletter-footer-submit" type="button" class="primary-button">Subscribe to our Newsletter</button>
+              </div>
+              <div id="newsletter-footer-success" class="is--hidden">
+                <p><i class="fa fa-check" aria-hidden="true"></i> Successfully subscribed.</p>
+              </div>
+            </form>
+            
+          </div>
+        </li>
+      </ul>
+      <ul class="footer-item">
+        <li><span>Product</span></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      <ul class="footer-item">
+        <li><span>Resources</span></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a target="_blank" href="https://www.blog.yotako.io/">Blog</a></li>
+      </ul>
+      <ul class="footer-item">
+        <li><span>About</span></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="terms-of-services.html">Terms of Services</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+      <ul class="footer-item">
+        <li><span>Contact Us</span></li>
+        <li><a href="contact.html">Contact Yotako</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrapper-container-lg footer-bottom-container">
+    <div class="copyright"><span>©</span> Yotako 2016-2017</div>
+  </div>
+</footer>
+<script src="js/web.js"></script>
+
+  <div class="cookies-container">
+    <div class="cookies-wrapper">
+        <p class="cookies-content">We use cookies on this site to enhance your user experience. To better understand how they are used feel free to read our <a href="privacy-policy.html">privacy policy.</a></p>
+        <button id="accept-cookies-hook" class="blue-button small-button">I agree</button>
+    </div>
+</div>
+
+</body>
